@@ -67,7 +67,6 @@
 }
 
 /* Interface */
-
 .circle {
   width: 18px;
   height: 18px;
@@ -77,6 +76,44 @@
   display: block;
 }
 
-
+.tooltip-wrap {
+  position: absolute;
+  right: 5.5em;
+  top: 0;
+  cursor: pointer;
+  margin-left: .25em;
+  width: 17px;
+  height: 17px;
+  display: block;
+  background-size: contain;
+  background-image: url(../src/components/icons/svgs/icon-info.svg);
+  background-repeat: no-repeat;
+  &:after {
+    visibility:hidden;
+    position: absolute;
+    left:-99999999999px;
+  } 
+  &:hover:after,
+  &:hover .tooltip {
+    visibility:visible;
+    left:0px;
+  }
+}
   
-  
+.tooltip {
+  right: 1em;
+  background: $color-navy;
+  bottom: 165%;
+  box-shadow: 0 4px 12px 0 rgb(104 115 125 / 15%);
+  color: $color-white;
+  font-size: 14px;
+  left: -16em;
+  line-height: 1.25em;
+  padding: 1em;
+  width: 18em;
+  z-index: 2;
+  border-radius: .5em;
+  visibility:hidden;
+  position: absolute;
+  left:-99999999999px;
+}  

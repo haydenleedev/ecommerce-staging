@@ -12,6 +12,13 @@
   }
 }
 
+/* Utility */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .relative {
   position:relative;
 }
@@ -20,6 +27,26 @@
   display:block;
 }
 
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* padding & margin */
+.pt-20px {
+  padding-top:20px;
+}
+.pt-30px {
+  padding-top:30px;
+}
+.pb-20px {
+  padding-bottom:20px;
+}
+.pb-30px {
+  padding-bottom:30px;
+}
+
+/* Component section */
 .table-headline-gray {
   @include section-headline($color-mediumgray, $color-black);
 }

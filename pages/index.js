@@ -15,18 +15,28 @@ export default function Home() {
       </Head>
 
         <h1 className={styles.title}>Hello UJET!</h1>
-        <div>
+        <div className={styles.clearfix}>
           <button className={`${icons['btn']} ${icons['btn-white']} ${icons['btn-big']}` }><span>Back</span></button>
           <button className={`${icons['btn']} ${icons['btn-orange']} ${icons['btn-big']}` }><span>Continue</span></button>
           <button className={`${icons['btn']} ${icons['btn-blue']} ${icons['btn-big']}` }><span>Buy Now</span></button>
           <button className={`${icons['btn']} ${icons['btn-blue']} ${icons['btn-small']}` }><span>Try Now</span></button>
           <button className={`${icons['btn']} ${icons['btn-skyblue']} ${icons['btn-medium']}` }><span>+ Compare all plans and features</span></button>
         </div>
-          <div><svgComponent.UjetCxLogo/></div>
+
+        <div className={`${styles['grid-col-4']} ${styles['pt-30px']} ${styles['pb-30px']}`}>
+          <div className={styles.relative}>
+            <span>All Core Channels*</span>
+              <span className={icons['tooltip-wrap']}>
+                <span className={icons['tooltip']}>
+                        Support for inbound calls over the PSTN as well as outbound calling via the agent dialpad or click-to-call within the CRM.</span>
+            </span>
+          </div>
+          </div>
+
+          <div className={styles.clearfix}><svgComponent.UjetCxLogo/></div>
           <div><svgComponent.IconX/></div>
           <div><svgComponent.IconCheck/></div>
           <div><svgComponent.IconCheckCircle/></div>
-          <div><svgComponent.IconInfo/></div>
           <span className={icons.circle}></span>
 
           <div className={styles.relative}><span className={icons['radio-btn']}></span></div>
@@ -35,7 +45,6 @@ export default function Home() {
           <div className={styles['table-headline-blue']}>Today's Charge</div>
           <div className={styles.grid}>
           <span className={`${styles.number} ${styles['align-center']}`}>1</span> 
-
         </div>
     </div>
   )
