@@ -1,0 +1,52 @@
+@import "./settings/__settings";
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1084px;
+  margin: 0 auto;
+
+  @include desktop() {
+      width: 100%;
+      flex-direction: column;
+  }
+}
+
+.relative {
+  position:relative;
+}
+
+.block {
+  display:block;
+}
+
+.table-headline-gray {
+  @include section-headline($color-mediumgray, $color-black);
+}
+
+.table-headline-blue {
+  @include section-headline($color-darkblue, $color-white);
+}
+
+.container {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+
+/* Alignment */
+.align-center {
+  text-align:center;
+}
+
+.number {
+  width:24px;
+  height:24px;
+  font-size:18px;
+  line-height:24px;
+  color:$color-black;
+  font-weight:600;
+  border-radius:50%;
+  background-color:$color-paleblue;
+  display:block;
+}
+

@@ -1,0 +1,82 @@
+@import "./settings/__settings";
+
+/* Buttons */
+.btn {
+    border-radius: 30px;
+    padding: .5em 1.5em;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+.btn-big {
+  font-size: 22px;
+}
+.btn-medium {
+  font-size: 18px;
+}
+.btn-small {
+  font-size: 16px;
+}
+
+.btn-orange {
+  @include buttons($color-orange, $color-orange, $color-white, 600);
+}
+.btn-blue {
+  @include buttons($color-darkblue, $color-darkblue, $color-white, 600);
+}
+.btn-skyblue {
+  @include buttons($color-white, $color-skyblue, $color-black, 600);
+}
+.btn-white {
+  @include buttons($color-white, $color-gray, $color-gray, 400);
+}
+
+.radio-btn {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  margin-right: 8px;
+  top: 6px;
+}
+
+.radio-btn:before {
+  background-color: $color-white;
+  top: 50%;
+  margin-top: -7px;
+  content: "";
+  border: 2px solid $color-darkblue;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+}
+
+.radio-btn:after {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: $color-darkblue;
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+}
+
+/* Interface */
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  border:3px solid $color-lightblue;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+  
+  

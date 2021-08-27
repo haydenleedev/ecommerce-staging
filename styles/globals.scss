@@ -1,0 +1,46 @@
+@import "./settings/__settings";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: GalanoGrotesque, sans-serif;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, span, button, input, select {
+  font-family: GalanoGrotesque, sans-serif;
+}
+
+/* Font Size */
+
+h1 {
+    font-size: 50px;
+    font-weight:600;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight:600;
+}
+h3 {
+    font-size: 32px;
+    font-weight:600;
+}
+h4 {
+    font-size: 22px;
+    font-weight:600;
+}
+p {
+  font-size:16px;
+}
+

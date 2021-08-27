@@ -1,0 +1,24 @@
+{
+  "name": "ujet-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "svg": "svgr -d src/components/icons src/components/icons/svgs",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "^11.1.0",
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.38.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^10.2.1-canary.3"
+  }
+}
