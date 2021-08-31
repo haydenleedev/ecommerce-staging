@@ -3,7 +3,7 @@
 /* Buttons */
 .btn {
     border-radius: 30px;
-    padding: .5em 1.5em;
+    padding: .8rem 2.5rem;
     border-style: solid;
     border-width: 1px;
     cursor: pointer;
@@ -78,41 +78,54 @@
 
 .tooltip-wrap {
   position: absolute;
-  right: 5.5em;
+  right: 5.5rem;
   top: 0;
   cursor: pointer;
-  margin-left: .25em;
+  margin-left: .25rem;
   width: 17px;
   height: 17px;
   display: block;
   background-size: contain;
   background-image: url(../src/components/icons/svgs/icon-info.svg);
   background-repeat: no-repeat;
+  overflow:hidden;
   &:after {
     visibility:hidden;
     position: absolute;
     left:-99999999999px;
   } 
-  &:hover:after,
+  &:hover {
+    overflow:visible;
+  }
+  &:hover:after{
+    visibility:visible;
+  }
   &:hover .tooltip {
     visibility:visible;
-    left:0px;
+    left:-13rem;
   }
+  &:after {
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-top: .5rem solid $color-navy;
+    top: -.7rem;
+    content: "";
+    left: 0;
+  } 
 }
   
 .tooltip {
-  right: 1em;
+  right: 1rem;
   background: $color-navy;
   bottom: 165%;
   box-shadow: 0 4px 12px 0 rgb(104 115 125 / 15%);
   color: $color-white;
   font-size: 14px;
-  left: -16em;
   line-height: 1.25em;
-  padding: 1em;
-  width: 18em;
+  padding: 1rem;
+  width: 16rem;
   z-index: 2;
-  border-radius: .5em;
+  border-radius: .5rem;
   visibility:hidden;
   position: absolute;
   left:-99999999999px;
