@@ -1,12 +1,12 @@
-@import "./settings/__settings";
+@import './settings/__settings';
 
 /* Buttons */
 .btn {
-    border-radius: 30px;
-    padding: .8rem 2.5rem;
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
+  border-radius: 30px;
+  padding: 0.8rem 2.5rem;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
 }
 .btn-big {
   font-size: 22px;
@@ -44,7 +44,7 @@
   background-color: $color-white;
   top: 50%;
   margin-top: -7px;
-  content: "";
+  content: '';
   border: 2px solid $color-darkblue;
   border-radius: 100%;
   width: 18px;
@@ -60,7 +60,7 @@
   height: 8px;
   border-radius: 100%;
   background-color: $color-darkblue;
-  content: "";
+  content: '';
   position: absolute;
   left: 5px;
   top: 6px;
@@ -71,7 +71,7 @@
   width: 18px;
   height: 18px;
   border-radius: 9px;
-  border:3px solid $color-lightblue;
+  border: 3px solid $color-lightblue;
   box-sizing: border-box;
   display: block;
 }
@@ -81,39 +81,39 @@
   right: 5.5rem;
   top: 0;
   cursor: pointer;
-  margin-left: .25rem;
+  margin-left: 0.25rem;
   width: 17px;
   height: 17px;
   display: block;
   background-size: contain;
-  background-image: url(../src/components/icons/svgs/icon-info.svg);
+  background-image: url(../components/icons/svgs/icon-info.svg);
   background-repeat: no-repeat;
-  overflow:hidden;
+  overflow: hidden;
   &:after {
-    visibility:hidden;
+    visibility: hidden;
     position: absolute;
-    left:-99999999999px;
-  } 
-  &:hover {
-    overflow:visible;
+    left: -99999999999px;
   }
-  &:hover:after{
-    visibility:visible;
+  &:hover {
+    overflow: visible;
+  }
+  &:hover:after {
+    visibility: visible;
   }
   &:hover .tooltip {
-    visibility:visible;
-    left:-13rem;
+    visibility: visible;
+    left: -13rem;
   }
   &:after {
-    border-left: .5rem solid transparent;
-    border-right: .5rem solid transparent;
-    border-top: .5rem solid $color-navy;
-    top: -.7rem;
-    content: "";
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-top: 0.5rem solid $color-navy;
+    top: -0.7rem;
+    content: '';
     left: 0;
-  } 
+  }
 }
-  
+
 .tooltip {
   right: 1rem;
   background: $color-navy;
@@ -125,8 +125,8 @@
   padding: 1rem;
   width: 16rem;
   z-index: 2;
-  border-radius: .5rem;
-  visibility:hidden;
+  border-radius: 0.5rem;
+  visibility: hidden;
   position: absolute;
-  left:-99999999999px;
-}  
+  left: -99999999999px;
+}

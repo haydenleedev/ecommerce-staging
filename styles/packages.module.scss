@@ -1,35 +1,12 @@
 @import "./settings/__settings";
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1084px;
-  margin: 0 auto;
-
-  @include desktop() {
-      width: 100%;
-      flex-direction: column;
-  }
-}
-
 /* Utility */
-.clearfix:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .relative {
   position:relative;
 }
 
 .block {
   display:block;
-}
-
-.grid-col-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* padding & margin */
@@ -53,16 +30,6 @@
 
 .table-headline-blue {
   @include section-headline($color-darkblue, $color-white);
-}
-
-.container {
-  max-width: 1084px;
-  margin: 0 auto;
-}
-
-/* Alignment */
-.align-center {
-  text-align:center;
 }
 
 .number {
