@@ -1,0 +1,81 @@
+@import "./settings/__settings";
+
+.primary-nav {
+    font-size: 14px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 0 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    @include siteWidth();
+    margin: 0 auto;
+    padding: 12px 20px;
+    @include desktop() {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-direction: row;
+        font-size: 18px;
+        padding:10px 0;
+    }
+    ul, li {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    a {
+        padding:15px;
+        display:block;
+        position:relative;
+        border: none;
+        text-decoration: none;
+        font-size:14px;
+        @include desktop() {
+            font-size: 16px;
+        }
+    }
+}
+
+.menu {
+   display: block;
+    @include desktop() {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+}
+
+.logo {
+    a {
+        display:block;
+        flex: 0 0 auto;
+        width: 130px;
+        height: 40px;
+        background: url(../components/icons/svgs/ujet-cx-logo.svg) left top no-repeat transparent;
+        overflow: hidden;
+        text-indent: -9999px;
+        border: none;
+    }
+}
+
+.grid-col-4 {
+    display: grid;
+    @include desktop() {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+    }
+}
+.stick {
+    position:fixed;
+    width: 100%;
+    background-color:$color-white;
+    z-index:9;
+    @include shadow();
+    .sticky-wrap {
+        @include desktop() {
+            top: 0;
+            left: 0;
+        }
+    }
+}
