@@ -1,9 +1,9 @@
+import * as svgComponent from 'components/icons';
 import Head from 'next/head';
-import * as svgComponent from '../src/components/icons';
-import icons from '../styles/buttons.module.scss';
-import styles from '../styles/packages.module.scss';
+import icons from 'styles/buttons.module.scss';
+import styles from 'styles/packages.module.scss';
 
-export default function Home() {
+export default function Assets() {
   return (
     <div className={styles.container}>
       <Head>
