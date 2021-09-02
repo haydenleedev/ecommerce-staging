@@ -1,0 +1,58 @@
+@import "./settings/__settings";
+
+.grid {
+    display: flex;
+    @include desktop() {
+        width: 100%;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .algin-center {
+        .col {
+            align-items: center;
+            justify-content: center;
+        }
+        .row {
+            justify-content: center;
+        }
+    }
+    .col {
+        position: relative;
+        padding: 8px;
+        display:flex;
+        flex-direction:column;
+        &.col-3 {
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+        &.col-4 {
+            flex: 0 0 auto;
+            width: 100%;
+            @include desktop() {
+                width: 25%;
+            }
+        }
+    }
+  }
+
+  .container {
+    @include siteWidth();
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .inner {
+      padding:1.5rem;
+      @include card();
+  }
+
+  /* Alignment */
+  .align-center {
+    text-align:center;
+  }
+
