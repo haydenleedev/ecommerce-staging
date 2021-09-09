@@ -65,5 +65,17 @@
     font-display: block;
   }
   
+  /* arrow-down */
+  @font-face {
+    font-family: 'arrow-down';
+    src:  url('/fonts/arrow-down.eot?mzerzb');
+    src:  url('/fonts/arrow-down.eot?mzerzb#iefix') format('embedded-opentype'),
+      url('/fonts/arrow-down.ttf?mzerzb') format('truetype'),
+      url('/fonts/arrow-down.woff?mzerzb') format('woff'),
+      url('/fonts/arrow-down.svg?mzerzb#arrow-down') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
   
   

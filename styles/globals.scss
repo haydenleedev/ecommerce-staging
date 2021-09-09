@@ -53,8 +53,8 @@ a {
   --primary-nav-height: 66px;
 }
 
-.main {
-  padding-top: calc(30px + var(--primary-nav-height));
+main {
+  padding-top: 30px;
 }
 
 h1, h2, h3, h4, p, span, button, input, select {
@@ -64,22 +64,76 @@ h1, h2, h3, h4, p, span, button, input, select {
 /* Font Size */
 
 h1 {
-    font-size: 50px;
+    font-size: 38px;
     font-weight:600;
+    line-height:1.5em;
+    line-height: calc(1em + 12px);
+    padding-bottom:20px;
+    @include desktop() {
+      font-size: 50px;
+    }
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 28px;
     font-weight:600;
+    line-height: calc(1em + 10px);
+    padding-bottom:15px;
+    @include desktop() {
+      font-size: 40px;
+    }
 }
 h3 {
-    font-size: 32px;
-    font-weight:600;
-}
-h4 {
     font-size: 22px;
     font-weight:600;
+    line-height:1.5em;
+    line-height: calc(1em + 8px);
+    @include desktop() {
+      font-size: 30px;
+    }
+}
+h4 {
+    font-size: 18px;
+    font-weight:600;
+    line-height:1.5em;
+    @include desktop() {
+      font-size: 20px;
+    }
 }
 p {
   font-size:16px;
+  line-height:1.5em;
+}
+
+form input:not([type=checkbox], [type=submit]) {
+  background: $color-white;
+  border-radius: 4px;
+  border: 1px solid $color-darkgray;
+  color: $color-black;
+  font-size: 16px;
+  height: 48px;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  color: $color-black;
+  font-size: 16px;
+  margin-bottom: .25rem;
+  line-height: 1.4em;
+}
+
+input[type=checkbox]:checked ~ span:before {
+  border-color:$color-green;
+}
+input[type=checkbox]:checked ~ span::after {
+  background-color: transparent;
+  left: .375rem;
+  border-width: 0 0.125rem 0.125rem 0;
+  border-style: solid;
+  border-color: $color-green;
+  transform: translateY(0.1rem) rotate(45deg);
+  width: 0.3rem;
+  height: 0.6rem;
 }

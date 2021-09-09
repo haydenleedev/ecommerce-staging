@@ -1,4 +1,16 @@
+@mixin largeDesktop() {
+    @media (min-width: 1008px) {
+        @content;
+    }
+}
+
 @mixin desktop() {
+    @media (min-width: 890px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
     @media (min-width: 768px) {
         @content;
     }
@@ -24,6 +36,9 @@
         } @else if $bgColor == $color-orange {
             background-color: $color-darkblue;
             border-color: $color-darkblue;
+        } @else if $bgColor == $color-navy {
+            background-color: $color-darkblue;
+            border-color: $color-darkblue;
         } @else if $bgColor == $color-darkblue {
             background-color: $color-orange;
             border-color: $color-orange;
@@ -44,7 +59,7 @@
   }
 
   @mixin card() {
-    border: 1px solid $color-mediumgray;
+    border: 2px solid $color-white;
     box-sizing: border-box;
     border-radius: 12px;
     @include shadow();

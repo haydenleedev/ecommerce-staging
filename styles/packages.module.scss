@@ -8,6 +8,15 @@
 .block {
   display:block;
 }
+/* Titles */
+.card-title {
+  font-size: 36px;
+  padding-bottom:0;
+}
+.pricing {
+  font-size: 28px;
+  font-weight: 600;
+}
 
 /* padding & margin */
 .pt-20px {
@@ -21,6 +30,12 @@
 }
 .pb-30px {
   padding-bottom:30px;
+}
+.mb-10px {
+  margin-bottom:10px;
+}
+.mt-20px {
+  margin-top:20px;
 }
 
 /* Component section */
@@ -44,3 +59,17 @@
   display:block;
 }
 
+.flag-orange {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: .6em;
+  transform: translate(-50%,-50%);
+  background-color: $color-orange;
+  color: $color-white;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-weight: 600;
+  z-index:1;
+}
