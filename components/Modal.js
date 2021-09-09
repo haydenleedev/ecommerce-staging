@@ -1,4 +1,5 @@
-
+import Button from "./button";
+import layout from 'styles/layout.module.scss'
 const Modal = (props) => {
 
     const cancleHandler = () => {
@@ -10,10 +11,11 @@ const Modal = (props) => {
     }
 
     return (
-        <div className='modal'>
+        <div className={layout.modal}>
             <p>Are you sure?</p>
-            <button className='btn btn--alt' onClick={cancleHandler}>Cancel</button>
-            <button className='btn' onClick={confirmHandler}>Confirm</button>
+            <Button color='btn-white' size='btn-big' text='Cancle' />
+            <Button color='btn-orange' size='btn-big' text='Confirm' />
+
         </div>
     )
 }
