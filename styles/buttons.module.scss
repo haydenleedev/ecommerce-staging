@@ -179,10 +179,12 @@
   border-radius: 0 0 11px 11px;
   padding: 0.7rem 2.5rem;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0;
   cursor: pointer;
   position: absolute;
   width:100%;
   bottom:0;
   left:0;
+  color:$color-white;
+  background-color:$color-orange;
 }
