@@ -1,4 +1,4 @@
-import * as svgComponent from 'components/icons';
+import * as svgComponent from '../components/icons';
 import Head from 'next/head';
 import layout from 'styles/layout.module.scss'
 import nav from 'styles/nav.module.scss'

@@ -1,0 +1,39 @@
+@import './settings/__settings';
+
+.feature-header {
+    padding: 0 0 10px;
+    font-weight: 600;
+    color: $color-navy;
+    font-size: 20px;
+}
+
+.feature {
+    padding-bottom:20px;
+    &.addons {
+        padding-bottom:0;
+    }
+}
+
+.feature-list {
+    list-style: none;
+    margin:0;
+    li {
+        display:flex;
+        position:relative;
+        list-style: none;
+        margin:0;
+        padding: 10px 25px 10px 0;
+        line-height: 1.2em;
+        text-align:left;
+        svg {
+            margin-right: 10px;
+            flex: 0 0 10%;
+        }
+    }
+}
+.addons {
+    @include desktop() {
+        padding-top: 10px;
+        border-top: 1px solid $color-mediumgray;
+    }
+}
