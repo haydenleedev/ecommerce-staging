@@ -32,7 +32,7 @@ export default function Home() {
                     <div className={`${layout.col}`}>
                         <div className={`${layout.inner} ${layout.selected}`}>
                         <FreeTrial />
-                        <span className={`${icons.cta} ${icons['btn-orange']}`}>Get started for free -&gt; </span>
+                        <span className={icons.cta}>Get started for free -&gt; </span>
                         </div>
                     </div>
                  </div>
