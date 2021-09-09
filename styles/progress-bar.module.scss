@@ -60,6 +60,12 @@
 
 .progress-step {
     flex:2;
+    &.current .header-line {
+        background-color: $color-mediumblue;
+        &.active {
+            background-color: $color-gray;
+        }
+    }
     &.completed {
         .step-info {
             color:$color-mediumblue;
