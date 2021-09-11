@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React, {Component} from "react";
-import nav from 'styles/nav.module.scss'
 import Link from 'next/link'
 
 class DropdownMenuHead extends Component {

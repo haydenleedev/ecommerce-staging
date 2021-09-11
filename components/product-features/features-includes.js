@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import * as svgComponent from '../components/icons';
-import includes from '../styles/features-include.module.scss'
-import icons from '../styles/buttons.module.scss'
+import * as svgComponent from '../icons';
+import includes from './features-include.module.scss'
+import icons from '../buttons/buttons.module.scss'
 
 class ProductFeaturesIncludes extends Component {
 	render() {

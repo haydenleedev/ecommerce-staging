@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import React, {Component} from "react";
-import * as svgComponent from './icons';
-import bar from '../styles/progress-bar.module.scss'
-import icon from '../styles/buttons.module.scss'
+import * as svgComponent from '../icons';
+import bar from './progress-bar.module.scss'
+import icon from '../buttons/buttons.module.scss'
 
 class ProgressBar extends Component {
     render () {

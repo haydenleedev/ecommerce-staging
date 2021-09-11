@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import React, {Component} from "react";
+import Link from 'next/link'
 import DropdownMenu from './navigation-dropdown';
 import DropdownMenuHead from './navigation-dropdown-head';
-
-import nav from 'styles/nav.module.scss'
-import Link from 'next/link'
+import nav from './nav.module.scss'
 
 class NavigationMenu extends Component { 
     render () {

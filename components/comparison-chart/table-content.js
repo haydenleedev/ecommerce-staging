@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-import Button from './button'
-import * as svgComponent from './icons';
-import compare from '../styles/comparison-chart.module.scss'
+import * as svgComponent from '../icons';
+import compare from './comparison-chart.module.scss'
 
 class TableContent extends React.Component {
 

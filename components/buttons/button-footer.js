@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import * as svgComponent from '../components/icons';
 import Button from './button'
-import layout from 'styles/layout.module.scss'
-import icons from 'styles/buttons.module.scss';
+import layout from '../../styles/layout.module.scss'
 
 class ButtonFooter extends Component {
 	render() {

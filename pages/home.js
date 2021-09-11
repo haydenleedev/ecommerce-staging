@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import NavigationStep from 'components/navigation-step'
-import ProductFeatures from 'components/features';
-import FreeTrial from 'components/free-trial';
-import ComparisonChart from 'components/comparison-chart';
-import ButtonFooter from 'components/button-footer';
+import NavigationStep from 'components/progress-bar/navigation-step'
+import ProductFeatures from 'components/product-features/features';
+import FreeTrial from 'components/free-trial/free-trial';
+import ComparisonChart from 'components/comparison-chart/comparison-chart';
+import ButtonFooter from 'components/buttons/button-footer';
+import icons from 'components/buttons/buttons.module.scss';
 import layout from 'styles/layout.module.scss'
-import icons from 'styles/buttons.module.scss';
 import styles from 'styles/packages.module.scss';
-import nav from 'styles/nav.module.scss'
 
 export default function Home() {
   return (

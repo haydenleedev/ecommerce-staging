@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import * as svgComponent from 'components/icons'
-import NavigationMenu from 'components/navigation-menu'
-import ContactForm from 'components/form'
+import * as svgComponent from '../components/icons'
+import NavigationMenu from 'components/navigation-menu/navigation-menu'
+import ContactForm from 'components/form/form'
 import layout from 'styles/layout.module.scss'
-import nav from 'styles/nav.module.scss'
-import icons from 'styles/buttons.module.scss';
 import styles from 'styles/packages.module.scss'
 
 export default function Home() {

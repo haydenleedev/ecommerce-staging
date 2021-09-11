@@ -1,9 +1,7 @@
 import React, {Component} from "react";
-import Button from './button'
+import Button from '../buttons/button'
 import TableContent from './table-content'
-import styles from '../styles/packages.module.scss'
-import compare from '../styles/comparison-chart.module.scss'
-import icons from '../styles/buttons.module.scss'
+import compare from './comparison-chart.module.scss'
 
 class ComparisonChart extends React.Component {
 

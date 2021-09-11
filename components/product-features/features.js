@@ -1,9 +1,8 @@
 import React, {Component} from "react";
+import Link from 'next/link'
 import ProductFeaturesIncludes from "./features-includes";
 import ProductFeaturesAddons from "./features-addons";
-import features from '../styles/features.module.scss'
-import styles from '../styles/packages.module.scss'
-import Link from 'next/link'
+import features from './features.module.scss'
 
 class ProductFeatures extends Component {
 	render() {

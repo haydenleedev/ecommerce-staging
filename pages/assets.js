@@ -1,9 +1,9 @@
 import * as svgComponent from '../components/icons';
 import Head from 'next/head';
 import layout from 'styles/layout.module.scss'
-import nav from 'styles/nav.module.scss'
-import icons from 'styles/buttons.module.scss';
 import styles from 'styles/packages.module.scss';
+import nav from 'components/navigation-menu/nav.module.scss'
+import icons from 'components/buttons/buttons.module.scss';
 
 export default function Assets() {
   return (

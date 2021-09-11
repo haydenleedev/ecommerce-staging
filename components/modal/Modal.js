@@ -1,5 +1,5 @@
-import Button from "./button";
-import layout from 'styles/layout.module.scss'
+import Button from "../buttons/button";
+import layout from '../styles/layout.module.scss'
 const Modal = (props) => {
 
     const cancleHandler = () => {
