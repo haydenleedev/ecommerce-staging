@@ -14,10 +14,10 @@ const mainNavs = [
                 sub_item: 'Why UJET',
                 sub_href: '/why-ujet/',
                 dropdown_items: [
-                    {dropdown_menu:'Embeddable Experience', dropdown_href: '/test1'},
-                    {dropdown_menu:'Purpose-Built for the CRM', dropdown_href: '/test2'},
-                    {dropdown_menu:'Intelligence &amp; Automation', dropdown_href: '/test3'},
-                    {dropdown_menu:'Ultra-Modern Enterprise Cloud', dropdown_href: '/test4'}
+                    {dropdown_menu:'Embeddable Experience', dropdown_href: '/embeddable-experience/'},
+                    {dropdown_menu:'Purpose-Built for the CRM', dropdown_href: '/purpose-built-for-the-crm/'},
+                    {dropdown_menu:'Intelligence &amp; Automation', dropdown_href: '/intelligence-automation/'},
+                    {dropdown_menu:'Ultra-Modern Enterprise Cloud', dropdown_href: '/ultra-modern-enterprise-cloud/'}
                 ]
             }]}
         ]
