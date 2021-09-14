@@ -1,4 +1,4 @@
-@import "./settings/__settings";
+@import '../../styles/settings/__settings';
 
 .primary-nav {
     font-size: 14px;
@@ -140,7 +140,7 @@
         flex: 0 0 auto;
         width: 130px;
         height: 40px;
-        background: url(../components/icons/svgs/ujet-cx-logo.svg) left top no-repeat transparent;
+        background: url(../icons/svgs/ujet-cx-logo.svg) left top no-repeat transparent;
         overflow: hidden;
         text-indent: -9999px;
         border: none;

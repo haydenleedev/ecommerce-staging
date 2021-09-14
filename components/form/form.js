@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import React, {Component} from "react"
-import layout from '../styles/layout.module.scss'
-import form from '../styles/form.module.scss'
-import icons from '../styles/buttons.module.scss'
+import form from './form.module.scss'
+import layout from '../../styles/layout.module.scss'
+import icons from '../buttons/buttons.module.scss'
 
 class ContactForm extends Component {
     render () {

@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from "react";
-import icons from '../styles/buttons.module.scss'
+import icons from '../buttons/buttons.module.scss'
 
 class FreeTrialContent extends Component {
 	render() {
