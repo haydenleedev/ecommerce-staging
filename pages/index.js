@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import React from 'react'
 import NavigationStep from 'components/progress-bar/navigation-step'
 import ProductFeatures from 'components/product-features/features';

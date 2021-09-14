@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import * as svgComponent from '../components/icons'
 import NavigationMenu from 'components/navigation-menu/navigation-menu'
 import ContactForm from 'components/form/form'
 import layout from 'styles/layout.module.scss'
