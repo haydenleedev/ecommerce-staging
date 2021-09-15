@@ -34,10 +34,10 @@
         position: relative;
         display:flex;
         flex-direction:column;
-        padding:10px 0;
+        padding:$size-10px 0;
         width: 100%;
         @include desktop() {
-            padding: 8px;
+            padding: $size-8px;
         }
         &.col-2 {
             flex: 0 0 auto;
@@ -64,8 +64,8 @@
   .container {
     @include siteWidth();
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $size-20px;
+    padding-right: $size-20px;
   }
 
   .wrap {
@@ -89,7 +89,7 @@
   }
 
   .open-container {
-      margin:30px 0;
+      margin: $size-30px 0;
       background-color: $color-white;
   }
 
@@ -97,10 +97,10 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 15px 20px 15px;
+    border-width: 0 15px $size-20px 15px;
     border-color: transparent transparent $color-white transparent;
     position: relative;
-    top: -20px;
+    top: -$size-20px;
     margin: 0 auto;
     display: block;
   }
@@ -126,5 +126,5 @@
     }
 }
 .theme-padding {
-    padding: 20px 10px;
+    padding: $size-20px $size-10px;
 }

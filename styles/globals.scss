@@ -16,7 +16,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -26,15 +25,15 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-html,
-body {
+html {
+  font-size: 100%;
   padding: 0;
   margin: 0;
   font-family: GalanoGrotesque, sans-serif;
-  line-height: 1;
 }
 
 body {
+  font-family: GalanoGrotesque, sans-serif;
   line-height: 1;
   width:100%;
   background-color:$color-lightgray;
@@ -64,44 +63,44 @@ h1, h2, h3, h4, p, span, button, input, select {
 /* Font Size */
 
 h1 {
-    font-size: 38px;
+    font-size: $size-38px; /* 38px */
     font-weight:600;
     line-height:1.5em;
     line-height: calc(1em + 12px);
     padding-bottom:20px;
     @include desktop() {
-      font-size: 50px;
+      font-size: $size-50px;
     }
 }
 
 h2 {
-    font-size: 28px;
+    font-size: $size-28px;  /* 28px */
     font-weight:600;
     line-height: calc(1em + 10px);
     padding-bottom:15px;
     @include desktop() {
-      font-size: 40px;
+      font-size: $size-40px;
     }
 }
 h3 {
-    font-size: 22px;
+    font-size: $size-22px; /* 22px */
     font-weight:600;
     line-height:1.5em;
     line-height: calc(1em + 8px);
     @include desktop() {
-      font-size: 30px;
+      font-size: $size-30px;
     }
 }
 h4 {
-    font-size: 18px;
+    font-size: $size-18px; /* 18px */
     font-weight:600;
     line-height:1.5em;
     @include desktop() {
-      font-size: 20px;
+      font-size: $size-18px;
     }
 }
 p {
-  font-size:16px;
+  font-size:$size-16px; /* 16px */
   line-height:1.5em;
 }
 
@@ -110,7 +109,7 @@ form input:not([type=checkbox], [type=submit]) {
   border-radius: 4px;
   border: 1px solid $color-darkgray;
   color: $color-black;
-  font-size: 16px;
+  font-size: $size-16px; /* 16px */
   height: 48px;
   padding: 20px 15px;
   width: 100%;
@@ -119,7 +118,7 @@ form input:not([type=checkbox], [type=submit]) {
 label {
   display: block;
   color: $color-black;
-  font-size: 16px;
+  font-size: $size-16px;
   margin-bottom: .25rem;
   line-height: 1.4em;
 }

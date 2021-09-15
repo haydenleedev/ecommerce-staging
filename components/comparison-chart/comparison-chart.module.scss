@@ -57,7 +57,7 @@
     h3 {
         font-size:14px;
         @include desktop() {
-            font-size:18px;
+            font-size:$size-18px;
         }
     }
     h4 {
@@ -96,7 +96,7 @@
         margin:0 auto;
     }
     p {
-        font-size: 14px;
+        font-size: $size-14px;
     }
 } 
 .table-body {

@@ -17,31 +17,31 @@
   }
 }
 .btn-big {
-  font-size: 16px;
+  font-size: $size-16px;
   @include tablet() {
-    font-size: 18px;
+    font-size: $size-18px;
   }
   @include desktop() {
-    font-size: 22px;
+    font-size: $size-22px;
   }
 }
 .btn-medium {
-  font-size: 16px;
+  font-size: $size-16px;
   @include tablet() {
-    font-size: 16px;
+    font-size: $size-16px;
   }
   @include desktop() {
-    font-size: 18px;
+    font-size: $size-18px;
   }
 }
 .btn-small {
-  font-size: 12px;
+  font-size: $size-12px;
   padding: 0.2rem 0.3rem;
   @include tablet() {
-    font-size: 14px;
+    font-size: $size-14px;
   }
   @include desktop() {
-    font-size: 15px;
+    font-size: $size-15px;
     margin: 0 1rem;
   }
 }
@@ -163,7 +163,7 @@
   bottom: 165%;
   box-shadow: 0 4px 12px 0 rgb(104 115 125 / 15%);
   color: $color-white;
-  font-size: 14px;
+  font-size: $size-14px;
   line-height: 1.25em;
   padding: 1rem;
   width: 14rem;

@@ -1,7 +1,7 @@
 @import '../../styles/settings/__settings';
 
 .primary-nav {
-    font-size: 14px;
+    font-size: $size-14px;
     position: relative;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
         justify-content: space-between;
         flex-direction: column;
         flex-direction: row;
-        font-size: 18px;
+        font-size: $size-18px;
         padding:10px 0;
         overflow:visible;
     }
@@ -41,10 +41,10 @@
             font-family: 'arrow-down';
             content: "\e900";
             color: $color-darkblue;
-            font-size: 10px;
+            font-size: $size-10px;
             @include desktop() {
                 color: $color-gray;
-                font-size:8px;
+                font-size:$size-8px;
                 padding: .3rem 0 0 .5rem;
             }
         }
@@ -115,10 +115,10 @@
             position:relative;
             border: none;
             text-decoration: none;
-            font-size:14px;
+            font-size: $size-14px;
             @include desktop() {
                 display:block;
-                font-size: 16px;
+                font-size: $size-16px;
             }
         }
         ul  ul a {

@@ -50,7 +50,7 @@
 
 @mixin section-headline($bgColor, $fontColor) {
     background-color:$bgColor;
-    font-size:18px;
+    font-size:$size-18px;
     color:$fontColor;
     font-weight:600;
     border-radius: 12px;
