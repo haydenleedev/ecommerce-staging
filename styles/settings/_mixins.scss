@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin largeDesktop() {
     @media (min-width: 1008px) {
         @content;
@@ -19,6 +21,11 @@
 @mixin siteWidth() {
     width:100%;
     max-width:1084px;
+}
+
+@function toRem($value) {
+    $remValue: math.div($value, 16) + rem; 
+    @return $remValue;
 }
 
 @mixin buttons($bgColor, $borderColor, $fontColor, $fontWeight) {

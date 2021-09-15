@@ -5,25 +5,28 @@
     position: relative;
     top: 0;
     left: 0;
-    padding: 0 0 30px;
+    padding: 0 0 toRem(30);
     overflow-y: hidden;
     overflow-x: hidden;
     @include siteWidth();
     margin: 0 auto;
-    padding: 12px 20px;
+    padding: toRem(12) toRem(20);
     @include desktop() {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         flex-direction: row;
         font-size: $size-18px;
-        padding:10px 0;
+        padding: toRem(10) 0;
         overflow:visible;
     }
     ul, li {
         list-style:none;
         margin:0;
         padding:0;
+    }
+    a:hover{
+        color: $color-mediumblue;
     }
     
 }
@@ -51,19 +54,19 @@
       }
     &> ul {
         position:absolute;
-        top:-9999px;
+        top: toRem(-9999);
         @include desktop() {
             &:after {
-            left: -999999px;
+            left: toRem(-999999);
             position: absolute;
-            left: 20%;
-            top: -10px;
+            left: 65%;
+            top: toRem(-10);
             width: 0;
             height: 0;
             content: "";
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 10px solid $color-mediumgray;
+            border-left: toRem(10) solid transparent;
+            border-right: toRem(10) solid transparent;
+            border-bottom: toRem(10) solid $color-mediumgray;
             }
         }
     }
@@ -73,15 +76,15 @@
         @include desktop() {
         position: absolute;
         top: 3rem;
-        left: 0;
+        right: -3rem;
         background: #fff;
         text-align: left;
-        min-width: 365px;
-        padding: 15px 20px;
-        margin-left: -3em;
+        min-width: toRem(365);
+        padding: toRem(15) toRem(20);
+        margin-left: -15rem;
         margin-top: 0;
         @include shadow();
-        border: 1px solid $color-mediumgray;
+        border: toRem(1) solid $color-mediumgray;
         z-index: 3;
         }
     }
@@ -111,7 +114,7 @@
             flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-between;
-            padding:15px;
+            padding: toRem(15);
             position:relative;
             border: none;
             text-decoration: none;
@@ -138,11 +141,11 @@
     a {
         display:block;
         flex: 0 0 auto;
-        width: 130px;
-        height: 40px;
+        width: toRem(130);
+        height: toRem(40);
         background: url(../icons/svgs/ujet-cx-logo.svg) left top no-repeat transparent;
         overflow: hidden;
-        text-indent: -9999px;
+        text-indent: toRem(-9999);
         border: none;
     }
 }
@@ -170,7 +173,7 @@
 .stick {
     position:fixed;
     width: 100%;
-    height:66px;
+    height: toRem(66);
     background-color:$color-white;
     z-index:9;
     overflow:hidden;
@@ -226,7 +229,7 @@
     position: absolute;
     z-index: 2;
     top: 0;
-    width: 48px;
+    width: toRem(48);
     border-bottom: none;
 }
 .menuicon-label {
@@ -234,9 +237,9 @@
     position: absolute;
     z-index: 3;
     overflow: hidden;
-    text-indent: -9999px;
-    margin-top: 14px;
-    margin-bottom: 10px;
+    text-indent: toRem(-9999);
+    margin-top: toRem(14);
+    margin-bottom: toRem(10);
     cursor: pointer;
     @include desktop() {
         display: none;
@@ -245,8 +248,8 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        width: 30px;
-        height: 2px;
+        width: toRem(30);
+        height: toRem(2);
         content: "";
         background: $color-darkblue;
         opacity: 0;
@@ -256,8 +259,8 @@
     span {
         background: linear-gradient(to bottom,$color-darkblue,$color-darkblue 10%,transparent 10%,transparent 45%,$color-darkblue 45%,$color-darkblue 55%,transparent 55%,transparent 90%,$color-darkblue 90%,$color-darkblue 100%);
         transition: opacity .5s 0s;
-        width: 30px;
-        height: 20px;
+        width: toRem(30);
+        height: toRem(20);
         border-bottom: none;
         display:block;
     }

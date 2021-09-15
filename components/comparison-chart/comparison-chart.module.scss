@@ -2,8 +2,8 @@
 
 .compare-table {
     width: 100%;
-    max-width: 1084px;
-    margin:20px auto;
+    max-width: toRem(1084);
+    margin: toRem(20) auto;
     background-color:$color-white;
 }
 .compare-sticky {
@@ -28,7 +28,7 @@
         @include desktop() {
             flex: 0 0 25%;
             text-align: left;
-            padding-left: 20px;
+            padding-left: toRem(20);
             justify-content: flex-end;
         }
     }
@@ -55,13 +55,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     h3 {
-        font-size:14px;
+        font-size: $size-14px;
         @include desktop() {
             font-size:$size-18px;
         }
     }
     h4 {
-        padding: 0 20px;
+        padding: 0 toRem(20);
         @include desktop() {
             text-align: left;
         }
@@ -75,7 +75,7 @@
             display: flex;
             flex: 0 0 25%;
             text-align: left;
-            padding-left: 20px;
+            padding-left: toRem(20);
             justify-content: flex-end;
         }
     }

@@ -5,8 +5,9 @@ import nav from './nav.module.scss'
 const MenuList = (props) => {
     const url = 'https://ujet.cx';
    return  (
-       props.primary_menus.map((primary_menu, Index) => (
-            <ul className={`${nav.menu} ${nav.items}`} key={Index}>
+    <ul className={`${nav.menu} ${nav.items}`} >
+      {props.primary_menus.map((primary_menu, Index) => (
+            
                 <li key={primary_menu.id} className={nav['has-dropdown']}>
                     <Link href={primary_menu.href ? (url + primary_menu.href) : '#'} passHref><a>{primary_menu.main_menu}</a></Link>
                     <ul>
@@ -29,8 +30,10 @@ const MenuList = (props) => {
                         ))}
                     </ul>
                 </li>
-            </ul>
-         )))
+         ))}
+         </ul>
+         )
+         
 }
 
 export default MenuList;

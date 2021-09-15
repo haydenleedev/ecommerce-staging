@@ -1,7 +1,7 @@
 @import "./settings/__settings";
 
 .main {
-    padding-top: calc(30px + var(--primary-nav-height));
+    padding-top: calc(toRem(30) + var(--primary-nav-height));
 }
 .grid {
     display: flex;
@@ -97,10 +97,10 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 15px $size-20px 15px;
+    border-width: 0 toRem(15) $size-20px toRem(15);
     border-color: transparent transparent $color-white transparent;
     position: relative;
-    top: -$size-20px;
+    top: toRem(-20);
     margin: 0 auto;
     display: block;
   }

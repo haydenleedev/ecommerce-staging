@@ -49,11 +49,11 @@ a {
 }
 
 :root {
-  --primary-nav-height: 66px;
+  --primary-nav-height: 4.125rem;
 }
 
 main {
-  padding-top: 30px;
+  padding-top: toRem(30);
 }
 
 h1, h2, h3, h4, p, span, button, input, select {
@@ -66,8 +66,8 @@ h1 {
     font-size: $size-38px; /* 38px */
     font-weight:600;
     line-height:1.5em;
-    line-height: calc(1em + 12px);
-    padding-bottom:20px;
+    line-height: calc(1em + toRem(12));
+    padding-bottom: toRem(20);
     @include desktop() {
       font-size: $size-50px;
     }
@@ -76,8 +76,8 @@ h1 {
 h2 {
     font-size: $size-28px;  /* 28px */
     font-weight:600;
-    line-height: calc(1em + 10px);
-    padding-bottom:15px;
+    line-height: calc(1em + toRem(10));
+    padding-bottom: toRem(15);
     @include desktop() {
       font-size: $size-40px;
     }
@@ -86,7 +86,7 @@ h3 {
     font-size: $size-22px; /* 22px */
     font-weight:600;
     line-height:1.5em;
-    line-height: calc(1em + 8px);
+    line-height: calc(1em + toRem(8));
     @include desktop() {
       font-size: $size-30px;
     }
@@ -106,12 +106,12 @@ p {
 
 form input:not([type=checkbox], [type=submit]) {
   background: $color-white;
-  border-radius: 4px;
-  border: 1px solid $color-darkgray;
+  border-radius: toRem(4);
+  border: toRem(1) solid $color-darkgray;
   color: $color-black;
   font-size: $size-16px; /* 16px */
-  height: 48px;
-  padding: 20px 15px;
+  height: toRem(48);
+  padding: toRem(20) toRem(15);
   width: 100%;
 }
 
