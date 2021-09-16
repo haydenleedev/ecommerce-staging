@@ -48,7 +48,7 @@
             @include desktop() {
                 color: $color-gray;
                 font-size:$size-8px;
-                padding: .3rem 0 0 .5rem;
+                padding: toRem(5) 0 0 toRem(8);
             }
         }
       }
@@ -71,17 +71,15 @@
         }
     }
     &:hover > ul{
-        top:0;
-        position:relative;
         @include desktop() {
         position: absolute;
-        top: 3rem;
-        right: -3rem;
+        top: toRem(48);
+        right: toRem(-48);
         background: #fff;
         text-align: left;
         min-width: toRem(365);
         padding: toRem(15) toRem(20);
-        margin-left: -15rem;
+        margin-left: toRem(-240);
         margin-top: 0;
         @include shadow();
         border: toRem(1) solid $color-mediumgray;
@@ -95,7 +93,7 @@
    &.items {
         position: absolute;
         z-index: 1;
-        top: 4rem;
+        top: toRem(64);
         right: 0;
         bottom: 0;
         left: 0;
@@ -156,7 +154,7 @@
 
 .has-dropdown > ul >li > ul {
     padding-left: 0;
-    margin-left: 2.5rem;
+    margin-left: toRem(40);
     li {
         list-style-type: disc;
     }
@@ -195,6 +193,9 @@
     &:checked + .stick {
        height: 100%; 
        overflow:visible;
+       @include desktop() {
+        height:auto;
+       }
     }
     display:none;
     &:checked + .stick {

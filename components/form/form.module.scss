@@ -2,7 +2,7 @@
 
 .form-container {
     background-color: $color-paleblue;
-    border-radius:1rem;
+    border-radius: toRem(16);
     form {
         padding: toRem(30);
     }
@@ -20,8 +20,8 @@
         display: inline-flex;
         align-items: flex-start;
         font-size: $size-16px;
-        line-height: 1.25rem;
-        min-height: 2.5rem;
+        line-height: toRem(20);
+        min-height: toRem(40);
         padding: 0;
         cursor: pointer;
     }
@@ -38,10 +38,10 @@
         line-height: 1.375;
         border: toRem(1) solid;
         border-color: $color-darkgray;
-        border-radius: .15rem;
+        border-radius: toRem(3);
         width: 100%;
-        min-height: 2rem;
-        padding: 0.5625rem 0.625rem;
+        min-height: toRem(32);
+        padding: toRem(9) toRem(10);
     }
     .check {
         &:hover:before {
@@ -50,18 +50,18 @@
         &:before {
             left: 0;
             border: toRem(2) solid $color-darkgray;
-            width: 1rem;
-            height: 1rem;
-            border-radius: .1rem;
+            width: toRem(16);
+            height: toRem(16);
+            border-radius: toRem(1);
         }
         &:before, &:after {
             content: '';
             display: inline-block;
             position: absolute;
-            top: .2rem;
+            top: toRem(3);
         }
         position: relative;
-        padding: 0.125rem 0 0.125rem 1.7rem;
+        padding: toRem(2) 0 toRem(2) toRem(27);
         
     } 
 }

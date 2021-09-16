@@ -1,5 +1,6 @@
 import * as svgComponent from '../components/icons';
 import Head from 'next/head';
+import Button from 'components/buttons/button'
 import layout from 'styles/layout.module.scss'
 import styles from 'styles/packages.module.scss';
 import nav from 'components/navigation-menu/nav.module.scss'
@@ -17,11 +18,11 @@ export default function Assets() {
 
       <h1 className={styles.title}>Hello UJET!</h1>
         <section>
-          <button className={`${icons['btn']} ${icons['btn-white']} ${icons['btn-big']}` }><span>Back</span></button>
-          <button className={`${icons['btn']} ${icons['btn-orange']} ${icons['btn-big']}` }><span>Continue</span></button>
-          <button className={`${icons['btn']} ${icons['btn-blue']} ${icons['btn-big']}` }><span>Buy Now</span></button>
-          <button className={`${icons['btn']} ${icons['btn-blue']} ${icons['btn-small']}` }><span>Try Now</span></button>
-          <button className={`${icons['btn']} ${icons['btn-skyblue']} ${icons['btn-medium']}` }><span>+ Compare all plans and features</span></button>
+        <Button color='btn-white' size='btn-big' text='Back' />
+        <Button color='btn-orange' size='btn-big' text='Continue' />
+        <Button color='btn-blue' size='btn-big' text='Buy Now' />
+        <Button color='btn-blue' size='btn-small' text='Try Now' />
+        <Button color='btn-skyblue' size='btn-medium' text='+ Compare all plans and features' />
         </section>
 
         <div className={`${nav['grid-col-4']} ${styles['pt-30px']} ${styles['pb-30px']}`}>

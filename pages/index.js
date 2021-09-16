@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Button from 'components/buttons/button'
 import NavigationStep from 'components/progress-bar/navigation-step'
 import ProductFeatures from 'components/product-features/features';
 import FreeTrial from 'components/free-trial/free-trial';
@@ -24,6 +25,7 @@ export default function Home() {
         <div className={`${layout.container} ${layout.grid} ${layout['align-center']}`}>
             <h1>UJET Packages</h1>
         </div>
+        
         <section>
             <div className={`${layout.container} ${layout.grid} ${layout['align-center']} ${styles['mb-10px']}`}>
                  <div className={layout.row}>
@@ -46,7 +48,7 @@ export default function Home() {
                             <p className={`${styles.pricing} ${styles['pb-20px']}`}>$10</p>
 
                             <div className={icons['b-divider']}>
-                                <button className={`${icons['btn']} ${icons['btn-blue']} ${icons['btn-big']}` }><span>Buy Now</span></button>
+                            <Button color='btn-blue' size='btn-big' text='Buy Now' />
                             </div>
                              <ProductFeatures/>
                             
@@ -74,7 +76,7 @@ export default function Home() {
 
         <section>
         <div className={`${layout.container} ${styles['pt-30px']} ${layout['align-center']}`}>
-            <button className={`${icons['btn']} ${icons['btn-skyblue']} ${icons['btn-medium']}` }><span>+ Compare all plans and features</span></button>
+            <Button color='btn-skyblue' size='btn-medium' text='+ Compare all plans and features' />
         </div>
         <div className={layout['open-container']}>
             <span className={`${layout.triangle} ${layout['align-center']}`}></span>
