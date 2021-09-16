@@ -1,130 +1,138 @@
 @import "./settings/__settings";
 
 .main {
-    padding-top: calc(toRem(30) + var(--primary-nav-height));
+  padding-top: calc(toRem(30) + var(--primary-nav-height));
 }
 .grid {
-    display: flex;
+  display: flex;
+  @include desktop() {
+    width: 100%;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .row {
+    width: 100%;
     @include desktop() {
-        width: 100%;
-        flex-direction: column;
-        justify-content: stretch;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .inner {
+        height: 100%;
+      }
+    }
+  }
+  .algin-center {
+    .col {
+      align-items: center;
+      justify-content: center;
     }
     .row {
-        width: 100%;
-        @include desktop() {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-                .inner {
-                    height: 100%;
-                }
-            }
-    }
-    .algin-center {
-        .col {
-            align-items: center;
-            justify-content: center;
-        }
-        .row {
-            justify-content: center;
-        }
-    }
-    .col {
-        position: relative;
-        display:flex;
-        flex-direction:column;
-        padding:$size-10px 0;
-        width: 100%;
-        @include desktop() {
-            padding: $size-8px;
-        }
-        &.col-2 {
-            flex: 0 0 auto;
-            @include desktop() {
-            width: 50%;
-            }
-        }
-        &.col-3 {
-            flex: 0 0 auto;
-            @include desktop() {
-            width: 33.3333333333%;
-            }
-        }
-        &.col-4 {
-            flex: 0 0 auto;
-            width: 100%;
-            @include largeDesktop() {
-                width: 25%;
-            }
-        }
+      justify-content: center;
     }
   }
-
-  .container {
-    @include siteWidth();
-    margin: 0 auto;
-    padding-left: $size-20px;
-    padding-right: $size-20px;
-  }
-
-  .wrap {
-    @include siteWidth();
-    margin: 0 auto;
-  }
-
-  .inner {
+  .col {
+    position: relative;
     display: flex;
     flex-direction: column;
+    padding: $size-10px 0;
     width: 100%;
-    padding: toRem(20) toRem(20) toRem(6);
-    position: relative;
     @include desktop() {
-        padding: toRem(20);
+      padding: $size-8px;
     }
-    &.selected {
-        border-color: $color-orange;
+    &.col-2 {
+      flex: 0 0 auto;
+      @include desktop() {
+        width: 50%;
+      }
     }
-    @include card();
+    &.col-3 {
+      flex: 0 0 auto;
+      @include desktop() {
+        width: 33.3333333333%;
+      }
+    }
+    &.col-4 {
+      flex: 0 0 auto;
+      width: 100%;
+      @include largeDesktop() {
+        width: 25%;
+      }
+    }
   }
+}
 
-  .open-container {
-      margin: $size-30px 0;
-      background-color: $color-white;
-  }
+.container {
+  @include siteWidth();
+  margin: 0 auto;
+  padding-left: $size-20px;
+  padding-right: $size-20px;
+}
 
-  .triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 toRem(15) $size-20px toRem(15);
-    border-color: transparent transparent $color-white transparent;
-    position: relative;
-    top: toRem(-20);
-    margin: 0 auto;
-    display: block;
-  }
+.wrap {
+  @include siteWidth();
+  margin: 0 auto;
+}
 
-  /* Alignment */
-  .align-center {
-    text-align:center;
+.inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: toRem(20) toRem(20) toRem(6);
+  position: relative;
+  @include desktop() {
+    padding: toRem(20);
   }
+  &.selected {
+    border-color: $color-orange;
+  }
+  @include card();
+}
+
+.open-container {
+  margin: $size-30px 0;
+  background-color: $color-white;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 toRem(15) $size-20px toRem(15);
+  border-color: transparent transparent $color-white transparent;
+  position: relative;
+  top: toRem(-20);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Alignment */
+.align-center {
+  text-align: center;
+}
 
 /* Width */
 .w-100 {
-    width:100%;
+  width: 100%;
 }
 
 .footer-btn-theme {
-    background-color: $color-white;
-    @include shadow();
-    position:sticky;
-    bottom:0;
-    z-index:9;
-    button {
-        margin: toRem(5) toRem(16);
-    }
+  background-color: $color-white;
+  @include shadow();
+  position: sticky;
+  bottom: 0;
+  z-index: 9;
+  button {
+    margin: toRem(5) toRem(16);
+  }
 }
 .theme-padding {
-    padding: $size-20px $size-10px;
+  padding: $size-20px $size-10px;
+}
+
+/* font general */
+.bold {
+  font-weight: 600;
+}
+.text-underline {
+  text-decoration: underline;
 }
