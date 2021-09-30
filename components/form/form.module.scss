@@ -61,6 +61,7 @@
       position: absolute;
       top: toRem(3);
     }
+    display: block;
     position: relative;
     padding: toRem(2) 0 toRem(2) toRem(27);
   }
@@ -69,7 +70,23 @@
 .mb-20px {
   margin-bottom: toRem(20);
 }
+.mb-10px {
+  margin-bottom: toRem(10);
+}
+
+.mlr-5px {
+  margin-left: toRem(5);
+  margin-right: toRem(5);
+}
+.pl-20px {
+  padding-left: toRem(20);
+}
 
 .copyright {
   font-size: toRem(14);
+}
+
+.paragraph {
+  padding: toRem(8);
+  line-height: 0 1.4em;
 }

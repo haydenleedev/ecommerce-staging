@@ -1,8 +1,7 @@
-import Head from "next/head";
 import React, { Component } from "react";
 import Button from "components/buttons/button";
+import layout from "styles/layout.module.scss";
 import form from "./form.module.scss";
-import layout from "../../styles/layout.module.scss";
 
 class ContactForm extends Component {
   render() {
@@ -39,6 +38,7 @@ class ContactForm extends Component {
               ></input>
             </div>
           </fieldset>
+
           <fieldset className={layout.row}>
             <div className={`${layout.col} ${layout["col-2"]}`}>
               <label htmlFor="firstName">
@@ -71,6 +71,40 @@ class ContactForm extends Component {
               />
             </div>
           </fieldset>
+
+          <fieldset className={layout.row}>
+            <div className={`${layout.col} ${layout["col-2"]}`}>
+              <label htmlFor="firstName">
+                <span className={form.required}>*</span> Company Name
+              </label>
+              <input
+                type="text"
+                name="companyName"
+                id="companyName"
+                autoComplete="companyName"
+                maxLength="50"
+                data-validate="companyName required"
+                aria-required="true"
+                required
+              />
+            </div>
+            <div className={`${layout.col} ${layout["col-2"]}`}>
+              <label htmlFor="lastName">
+                <span className={form.required}>*</span> Job Title
+              </label>
+              <input
+                type="text"
+                name="jobTitle"
+                id="jobTitle"
+                autoComplete="jobTitle"
+                maxLength="50"
+                data-validate="jobTitle required"
+                aria-required="true"
+                required
+              />
+            </div>
+          </fieldset>
+
           <fieldset className={layout.row}>
             <div className={`${layout.col} ${layout["w-100"]}`}>
               <label htmlFor="employees">
@@ -88,6 +122,7 @@ class ContactForm extends Component {
               />
             </div>
           </fieldset>
+
           <div className={layout.col}>
             <label htmlFor="subscriber" className={form.booleancheckbox}>
               <input
@@ -101,10 +136,11 @@ class ContactForm extends Component {
               </span>
             </label>
           </div>
-          <div className={`${layout.col} ${form["mb-20px"]}`}>
+
+          <div className={`${layout.col} ${form["mb-10px"]}`}>
             <label
               htmlFor="permission-received"
-              className={form.booleancheckbox}
+              className={`${form.booleancheckbox} ${layout["d-flex"]}`}
             >
               <input
                 name="permission-received"
@@ -113,46 +149,29 @@ class ContactForm extends Component {
                 id="permission-received"
               />
               <span className={form.check}>
-                <span className={form.required}>*</span>
+                <span className={form.required}>* </span>
                 By proceeding I agree to{" "}
-                <a
-                  href="#"
-                  className={`${layout.bold} ${layout["text-underline"]}`}
-                >
-                  {" "}
-                  UJET's Privacy Statement{" "}
-                </a>{" "}
-                and{" "}
-                <a
-                  href="#"
-                  className={`${layout.bold} ${layout["text-underline"]}`}
-                >
+                <a href="#" className={`${layout.bold} ${form["mlr-5px"]}`}>
+                  UJET's Privacy Statement
+                </a>
+                and
+                <a href="#" className={`${layout.bold} ${form["mlr-5px"]}`}>
                   Terms of Services.
                 </a>
               </span>
             </label>
-            <p className={`${form.copyright}`}>
-              We're committed to your privacy. ujet.cx uses the information you
-              provide to us to contact you about our relevant content, products,
-              and services. You may unsubscribe from these communications at any
-              time. For more information, check out our{" "}
-              <a
-                href="#"
-                className={`${layout.bold} ${layout["text-underline"]}`}
-              >
-                Privacy Policy
-              </a>
-              .
-            </p>
           </div>
-
+          <p className={form.paragraph}>
+            We&#x27;re commited to your privacy. UJET uses the information you
+            provide to us to contact you about our relevant content, products,
+            and services. You may unsubscribe from these communications at any
+            time. For more information, check out our{" "}
+            <a href="#" className={`${layout.bold} ${form["mlr-5px"]}`}>
+              Privacy Policy.
+            </a>
+          </p>
           <div className={layout.col}>
-            <Button
-              color="btn-navy"
-              size="btn-big"
-              text="Continue"
-              type="submit"
-            />
+            <Button color="btn-navy" size="btn-big" text="Continue" />
           </div>
         </form>
       </div>

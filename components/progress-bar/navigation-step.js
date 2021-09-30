@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import React, {Component} from "react";
-import Link from 'next/link'
+import Link from 'next/link';
+import React, { Component } from "react";
+import nav from '../navigation-menu/nav.module.scss';
+import bar from './progress-bar.module.scss';
 import ProgressBar from './progress-bar';
-import bar from './progress-bar.module.scss'
-import nav from '../navigation-menu/nav.module.scss'
 
 class NavigationStep extends Component {
     render () {

@@ -1,0 +1,48 @@
+@import "./settings/__settings";
+
+.number {
+  width: toRem(24);
+  height: toRem(24);
+  font-size: $size-18px;
+  line-height: toRem(24);
+  color: $color-black;
+  font-weight: 600;
+  border-radius: 50%;
+  background-color: $color-paleblue;
+  display: block;
+}
+
+.steps {
+  display: flex;
+  text-align: left;
+  & > .number {
+    width: 24px;
+    height: 24px;
+    background: $color-paleblue;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & .wrapper {
+    display: inline-block;
+    width: 100%;
+  }
+  & .pt-5px {
+    padding-top: 5px;
+  }
+  & .number-input {
+    border: 2px solid $color-darkmedium !important;
+    padding: 10px !important;
+    border-radius: 4px;
+    width: 90px;
+  }
+}
+.text-regular {
+  font-size: 14px;
+  font-weight: 400;
+}
+.mb-20px {
+  margin-bottom: 20px;
+}

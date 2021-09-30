@@ -1,18 +1,86 @@
 @import "./settings/__settings";
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -35,8 +112,8 @@ html {
 body {
   font-family: GalanoGrotesque, sans-serif;
   line-height: 1;
-  width:100%;
-  background-color:$color-lightgray;
+  width: 100%;
+  background-color: $color-lightgray;
 }
 
 a {
@@ -56,55 +133,67 @@ main {
   padding-top: toRem(30);
 }
 
-h1, h2, h3, h4, p, span, button, input, select {
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button,
+input,
+select {
   font-family: GalanoGrotesque, sans-serif;
 }
 
 /* Font Size */
 
 h1 {
-    font-size: $size-38px; /* 38px */
-    font-weight:600;
-    line-height:1.5em;
-    line-height: calc(1em + toRem(12));
-    padding-bottom: toRem(20);
-    @include desktop() {
-      font-size: $size-50px;
-    }
+  font-size: $size-38px; /* 38px */
+  font-weight: 600;
+  line-height: 1.5em;
+  line-height: calc(1em + toRem(12));
+  padding-bottom: toRem(20);
+  @include desktop() {
+    font-size: $size-50px;
+  }
 }
 
 h2 {
-    font-size: $size-28px;  /* 28px */
-    font-weight:600;
-    line-height: calc(1em + toRem(10));
-    padding-bottom: toRem(15);
-    @include desktop() {
-      font-size: $size-40px;
-    }
+  font-size: $size-28px; /* 28px */
+  font-weight: 600;
+  line-height: calc(1em + toRem(10));
+  padding-bottom: toRem(15);
+  @include desktop() {
+    font-size: $size-40px;
+  }
 }
 h3 {
-    font-size: $size-22px; /* 22px */
-    font-weight:600;
-    line-height:1.5em;
-    line-height: calc(1em + toRem(8));
-    @include desktop() {
-      font-size: $size-30px;
-    }
+  font-size: $size-22px; /* 22px */
+  font-weight: 600;
+  line-height: 1.5em;
+  line-height: calc(1em + toRem(8));
+  @include desktop() {
+    font-size: $size-30px;
+  }
 }
 h4 {
-    font-size: $size-18px; /* 18px */
-    font-weight:600;
-    line-height:1.5em;
-    @include desktop() {
-      font-size: $size-18px;
-    }
+  font-size: $size-18px; /* 18px */
+  font-weight: 600;
+  line-height: 1.5em;
+  @include desktop() {
+    font-size: $size-18px;
+  }
 }
 p {
-  font-size:$size-16px; /* 16px */
-  line-height:1.5em;
+  font-size: $size-16px; /* 16px */
+  line-height: 1.5em;
 }
 
-form input:not([type=checkbox], [type=submit]) {
+strong {
+  font-weight: 600;
+}
+
+form input:not([type="checkbox"], [type="submit"]) {
   background: $color-white;
   border-radius: toRem(4);
   border: toRem(1) solid $color-darkgray;
@@ -123,10 +212,10 @@ label {
   line-height: 1.4em;
 }
 
-input[type=checkbox]:checked ~ span:before {
-  border-color:$color-green;
+input[type="checkbox"]:checked ~ span:before {
+  border-color: $color-green;
 }
-input[type=checkbox]:checked ~ span::after {
+input[type="checkbox"]:checked ~ span::after {
   background-color: transparent;
   left: toRem(6);
   border-width: 0 toRem(2) toRem(2) 0;
@@ -135,4 +224,7 @@ input[type=checkbox]:checked ~ span::after {
   transform: translateY(0.1rem) rotate(45deg);
   width: toRem(5);
   height: toRem(10);
+}
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
 }

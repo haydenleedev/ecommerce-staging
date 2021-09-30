@@ -1,4 +1,4 @@
-@import '../../styles/settings/__settings';
+@import "../../styles/settings/__settings";
 
 /* Buttons */
 .btn {
@@ -6,7 +6,6 @@
   border-style: solid;
   border-width: toRem(1);
   cursor: pointer;
-
 }
 .btn-big {
   font-size: $size-16px;
@@ -44,6 +43,11 @@
   }
 }
 
+.mlr-7px {
+  margin-left: toRem(7);
+  margin-right: toRem(7);
+}
+
 .btn-orange {
   @include buttons($color-orange, $color-orange, $color-white, 600);
 }
@@ -61,7 +65,7 @@
 }
 
 .b-divider {
-  padding-bottom:toRem(25);
+  padding-bottom: toRem(25);
   border-bottom: toRem(1) solid $color-mediumgray;
 }
 
@@ -78,7 +82,7 @@
   background-color: $color-white;
   top: 50%;
   margin-top: toRem(-7);
-  content: '';
+  content: "";
   border: toRem(2) solid $color-darkblue;
   border-radius: 100%;
   width: toRem(18);
@@ -94,7 +98,7 @@
   height: toRem(8);
   border-radius: 100%;
   background-color: $color-darkblue;
-  content: '';
+  content: "";
   position: absolute;
   left: toRem(5);
   top: toRem(6);
@@ -120,7 +124,7 @@
 .tooltip-wrap {
   position: absolute;
   right: 0;
-  top: .6em;
+  top: 0.6em;
   cursor: pointer;
   margin-left: toRem(4);
   width: toRem(17);
@@ -150,7 +154,7 @@
     border-right: 0.5rem solid transparent;
     border-top: 0.5rem solid $color-navy;
     top: toRem(-11);
-    content: '';
+    content: "";
     left: 0;
   }
 }
@@ -180,9 +184,15 @@
   border-width: 0;
   cursor: pointer;
   position: absolute;
-  width:100%;
-  bottom:0;
-  left:0;
-  color:$color-white;
-  background-color:$color-orange;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: $color-white;
+  background-color: $color-orange;
+}
+
+.modal-footer-btn-theme {
+  button {
+    margin: toRem(5) toRem(10);
+  }
 }

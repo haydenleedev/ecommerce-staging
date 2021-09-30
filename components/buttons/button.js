@@ -7,8 +7,8 @@ const Button = (props) => {
       <button
         className={`${button["btn"]} ${button[`${props.color}`]} ${
           button[`${props.size}`]
-        }`}
-        type={props.type}
+        } ${button[`${props.padding}`]}`}
+        onClick={props.onClick}
       >
         <span>{props.text}</span>
       </button>

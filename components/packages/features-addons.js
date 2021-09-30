@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import * as svgComponent from '../icons';
+import * as svgComponent from 'components/icons';
 import includes from './features-include.module.scss'
 import icons from '../buttons/buttons.module.scss'
 
